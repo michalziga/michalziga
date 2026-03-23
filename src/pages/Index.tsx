@@ -42,7 +42,7 @@ Committed to rights-aware policy practice and inclusive leadership.</p>
             <AnimatedSection delay={0.3}>
               <div className="mb-8 flex flex-wrap gap-4 text-sm text-muted-foreground">
                 <span className="inline-flex items-center gap-1.5">
-                  <MapPin size={14} className="text-primary" /> Bratislava, Slovakia
+                  <MapPin size={14} className="text-primary" /> Budapest, Hungary
                 </span>
                 <span className="inline-flex items-center gap-1.5">
                   <Globe size={14} className="text-primary" /> Slovak (native) · English (C1)
