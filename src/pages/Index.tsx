@@ -10,7 +10,7 @@ const Index = () => {
         {/* Background glow */}
         <div className="pointer-events-none absolute -top-40 right-0 h-[600px] w-[600px] rounded-full bg-primary/10 blur-[120px]" />
 
-        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center shadow-md border-4 border-secondary-foreground border-solid rounded-md bg-[sidebar-accent-foreground] bg-[#2b3d4f] text-[#16a286]">
           {/* Text */}
           <div className="order-2 md:order-1">
             <AnimatedSection>
@@ -22,14 +22,21 @@ const Index = () => {
             <AnimatedSection delay={0.1}>
               <h1 className="mb-4 text-5xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                 Michal<br />
-                <span className="text-gradient">Žiga</span>
+                <span className="text-gradient text-[#16a286]">Žiga</span>
               </h1>
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
-              <p className="mb-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
-                Applicant for MA in Transnational Governance. Passionate about Roma inclusion, public policy, and human rights advocacy.
-              </p>
+              <p className="mb-6 max-w-lg text-lg leading-relaxed text-secondary-foreground">Political science graduate and emerging policy leader specializing in human rights, international public law, and security governance. 
+
+
+Currently in the Roma Graduate Preparation Program at Central European University. 
+
+
+Experience includes traineeships at the Council of Europe and Helsinki Committee for Human Rights, research on Israeli regional security and emerging defence technologies, and founding Out of Terror—a civic initiative that secured safe passage for persecuted Afghan civilians. 
+
+
+Committed to rights-aware policy practice and inclusive leadership.</p>
             </AnimatedSection>
 
             <AnimatedSection delay={0.3}>
@@ -47,11 +54,8 @@ const Index = () => {
             </AnimatedSection>
 
             <AnimatedSection delay={0.4}>
-              <a
-                href="/Michal_Ziga_CV.docx"
-                download
-                className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:shadow-xl hover:shadow-primary/30 hover:brightness-110"
-              >
+              <a href="/Michal_Ziga_CV.docx" download className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:shadow-xl hover:shadow-primary/30 hover:brightness-110">
+                
                 <Download size={16} /> Download CV
               </a>
             </AnimatedSection>
@@ -61,17 +65,13 @@ const Index = () => {
           <AnimatedSection className="order-1 flex justify-center md:order-2" delay={0.2} direction="right">
             <div className="relative">
               <div className="absolute -inset-4 rounded-full bg-primary/20 blur-2xl" />
-              <img
-                src={profileImg}
-                alt="Michal Žiga"
-                className="relative z-10 h-72 w-72 rounded-full object-cover object-top shadow-2xl ring-4 ring-primary/20 md:h-96 md:w-96"
-              />
+              <img alt="Michal Žiga" className="relative z-10 h-72 w-72 rounded-full object-cover object-top shadow-2xl ring-4 ring-primary/20 md:h-96 md:w-96" src="/lovable-uploads/99e6c1a2-c899-467d-9af7-907775a57d4d.jpg" />
+              
             </div>
           </AnimatedSection>
         </div>
       </section>
-    </PageWrapper>
-  );
+    </PageWrapper>);
 };
 
 export default Index;
